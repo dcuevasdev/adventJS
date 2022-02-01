@@ -1,0 +1,23 @@
+const letter = "bici coche balón _playstation bici coche peluche";
+
+const stringToArray = letter.split(" ");
+
+const counterGifts = stringToArray
+  .filter((gift) => {
+    const expReg = /_/g;
+
+    if (!expReg.test(gift)) {
+      return gift;
+    }
+  })
+  .reduce((obj, gift) => {
+    if (obj[gift]) {
+      obj[gift] += 1;
+    } else {
+      obj[gift] = 1;
+    }
+
+    return obj;
+  }, {});
+
+console.log(counterGifts);
