@@ -20,9 +20,9 @@ function sumPairs(numbers, result) {
   }
 
   if (arrResult.length === 2) {
-    return console.log(arrResult);
+    return arrResult;
   } else {
-    return console.log(null);
+    return null;
   }
 }
 
