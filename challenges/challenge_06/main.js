@@ -12,7 +12,6 @@ function sumPairs(numbers, result) {
       if (sum === result && arrResult <= 2) {
         arrResult.push(element);
         arrResult.push(copyArray[i + 1]);
-        break;
       }
     }
 
