@@ -1,7 +1,6 @@
 function contains(store, product) {
   const objectToString = JSON.stringify(store);
-  console.log(objectToString);
-  return console.log(objectToString.includes(`:"${product}"`));
+  return objectToString.includes(`:"${product}"`);
 }
 
 const almacen = {
