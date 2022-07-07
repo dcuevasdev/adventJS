@@ -13,7 +13,7 @@ function fixFiles(files) {
     return obj;
   }, {});
 
-  console.log(filesElements);
+  return filesElements;
 }
 
 const files = ["photo", "postcard", "photo", "photo", "video"];
