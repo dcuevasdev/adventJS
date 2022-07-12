@@ -4,7 +4,7 @@ function learn(time, courses) {
   let verifySum = 0;
   const coursesToDo = [];
 
-  const iteration = courses.forEach((timeOfCourse, index) => {
+  courses.forEach((timeOfCourse, index) => {
     for (let i = 0; i < courses.length; i++) {
       const sumNumbers = timeOfCourse + courses[i];
 
